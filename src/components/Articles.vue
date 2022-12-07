@@ -35,11 +35,13 @@ export default {
   justify-content: space-between;
 
   .article__category {
-    background-color: $bgArticle;
+    flex-basis:28%;
   }
   .article__recent {
+    flex-basis:40%;
   }
   .article__popular {
+    flex-basis:30%;
   }
 }
 </style>

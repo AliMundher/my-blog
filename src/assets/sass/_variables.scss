@@ -12,4 +12,28 @@ $bgArticle: #eee;
 @mixin bgSectionsArticles {
   background-color: $bgArticle;
   padding: 1rem;
+  border-radius:10px;
+}
+
+@mixin title{
+  text-transform:capitalize;
+  text-align:center;
+  font-size:1.2rem;
+  color:#7e7e7e;
+}
+
+@mixin ulStyle{
+  list-style:none;
+  padding:0;
+}
+
+@mixin liStyle{
+  border-radius:7px;
+  border:2px solid #7e7e7e;
+  margin-bottom:10px;
+  padding:1px 7px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:#7e7e7e;
 }
