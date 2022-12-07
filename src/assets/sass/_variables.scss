@@ -1,4 +1,15 @@
-$bgColor:#42b983;
-$txColor:#2c3e50;
-$navLinkColor:#fff;
-$bgArticle:#ccc;
+$bgColor: #42b983;
+$txColor: #2c3e50;
+$navLinkColor: #fff;
+$bgArticle: #eee;
+
+@mixin container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin bgSectionsArticles {
+  background-color: $bgArticle;
+  padding: 1rem;
+}

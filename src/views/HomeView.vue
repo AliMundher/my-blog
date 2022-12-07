@@ -20,7 +20,6 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  width: 1040px;
-  margin: 0 auto;
+  @include container;
 }
 </style>

@@ -1,17 +1,21 @@
 <template>
-  <div>
+  <div class="category">
     <h2 class="category__title">categories</h2>
   </div>
 </template>
 
 <script>
-  export default {
-    name:"Category"
-  }
+export default {
+  name: "Category"
+};
 </script>
 
 <style lang="scss" scoped>
- .category__title{
-  text-transform:capitalize;
- }
+.category {
+  @include bgSectionsArticles;
+
+  .category__title {
+    text-transform: capitalize;
+  }
+}
 </style>
