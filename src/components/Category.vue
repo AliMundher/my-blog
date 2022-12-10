@@ -9,9 +9,9 @@
       <li>sport</li>
     </ul>
   </div>
-  <div class="statisfic">
-    <h2 class="statisfic__title">statisfic</h2>
-    <ul class="statisfic__list">
+  <div class="statistic">
+    <h2 class="statistic__title">statistic</h2>
+    <ul class="statistic__list">
       <li>
         <h5>posts</h5>
         <span>0</span>
@@ -53,14 +53,14 @@ export default {
     }
   }
 }
- .statisfic{
+ .statistic{
   @include bgSectionsArticles;
   margin-top:5%;
 
-  .statisfic__title{
+  .statistic__title{
     @include title;
   }
-  .statisfic__list{
+  .statistic__list{
     @include ulStyle;
     li{
       @include liStyle;
