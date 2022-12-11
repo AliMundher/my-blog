@@ -19,7 +19,7 @@ export default {
 
   .land {
     width: 100%;
-    border: 2px solid red;
+    border: 2px solid #7e7e7e;
     min-height: 300px;
     margin: 5% 0;
   }
