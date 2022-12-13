@@ -5,11 +5,16 @@
 
 <script>
 import Navbar from "@/components/navbar/Nav.vue";
+import { useRoute } from "vue-router";
 
 export default {
   name: "App",
   components: {
-    Navbar
+    Navbar,
+  },
+  setup() {
+    const route = useRoute();
+    console.log(route.matched.path === "/posts");
   }
 };
 </script>
@@ -25,17 +30,5 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  height: 3000px;
-}
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-}
-
-@media (min-width: 800px) {
-  body {
-    padding: 10px;
-  }
 }
 </style>

@@ -1,0 +1,11 @@
+@mixin laptopMedium {
+  @media (min-width: 1024px) {
+    padding: 0px;
+  }
+}
+
+@mixin lgTablet {
+  @media (max-width: 900px) {
+    padding: 10px;
+  }
+}

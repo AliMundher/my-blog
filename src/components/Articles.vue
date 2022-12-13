@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="articleContainer">
     <div class="article">
       <div class="article__category">
         <Category />
@@ -30,31 +30,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.article {
-  display: flex;
-  justify-content: space-between;
-  @media (max-width: 768px) {
-    flex-direction: column-reverse;
+.articleContainer {
+  @media (min-width: 1024px) {
+    padding: 0px;
   }
 
-  .article__category {
-    flex-basis: 28%;
+  @media (max-width: 900px) {
+    padding: 10px;
+  }
 
+  .article {
+    display: flex;
+    justify-content: space-between;
     @media (max-width: 768px) {
-      flex-basis: 80%;
+      flex-direction: column-reverse;
     }
-  }
-  .article__recent {
-    flex-basis: 40%;
-    @media (max-width: 768px) {
-      flex-basis: 80%;
-      margin: 15px 0;
+
+    .article__category {
+      flex-basis: 28%;
+
+      @media (max-width: 768px) {
+        flex-basis: 80%;
+      }
     }
-  }
-  .article__popular {
-    flex-basis: 30%;
-    @media (max-width: 768px) {
-      flex-basis: 80%;
+    .article__recent {
+      flex-basis: 40%;
+      @media (max-width: 768px) {
+        flex-basis: 80%;
+        margin: 15px 0;
+      }
+    }
+    .article__popular {
+      flex-basis: 30%;
+      @media (max-width: 768px) {
+        flex-basis: 80%;
+      }
     }
   }
 }
