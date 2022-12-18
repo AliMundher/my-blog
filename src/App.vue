@@ -1,16 +1,19 @@
 <template>
   <Navbar />
   <router-view />
+  <Footer />
 </template>
 
 <script>
 import Navbar from "@/components/navbar/Nav.vue";
+import Footer from "@/components/footer/Footer.vue";
 import { useRoute } from "vue-router";
 
 export default {
   name: "App",
   components: {
     Navbar,
+    Footer
   },
   setup() {
     const route = useRoute();
