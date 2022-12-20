@@ -47,16 +47,16 @@
         </p>
       </div>
     </div>
-    <BtnLoad />
+    <BtnLoad name="load more" />
   </main>
 </template>
 
 <script>
-import BtnLoad from "@/components/buttons/LoadMore.vue";
+import BtnLoad from "@/components/buttons/MainButton.vue";
 
 export default {
   name: "RecentArticles",
-  components:{
+  components: {
     BtnLoad
   }
 };

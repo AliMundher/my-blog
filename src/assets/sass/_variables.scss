@@ -2,7 +2,7 @@ $bgColor: #90908f69;
 $txColor: #2c3e50;
 $navLinkColor: #fff;
 $bgArticle: #eee;
-$myBorderColor:#7e7e7e;
+$myBorderColor: #7e7e7e;
 
 @mixin container {
   width: 100%;
@@ -13,28 +13,49 @@ $myBorderColor:#7e7e7e;
 @mixin bgSectionsArticles {
   background-color: $bgArticle;
   padding: 1rem;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
-@mixin title{
-  text-transform:capitalize;
-  text-align:center;
-  font-size:1.2rem;
-  color:#7e7e7e;
+@mixin title {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7e7e7e;
 }
 
-@mixin ulStyle{
-  list-style:none;
-  padding:0;
+@mixin ulStyle {
+  list-style: none;
+  padding: 0;
 }
 
-@mixin liStyle{
-  border-radius:7px;
-  border:2px solid #7e7e7e;
-  margin-bottom:10px;
-  padding:1px 7px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  color:#7e7e7e;
+@mixin liStyle {
+  border-radius: 7px;
+  border: 2px solid #7e7e7e;
+  margin-bottom: 10px;
+  padding: 1px 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7e7e7e;
+}
+
+@mixin label {
+  display: block;
+  text-transform: capitalize;
+  color: #908d8d;
+  font-size: 0.9rem;
+}
+
+@mixin buttonStyle {
+  width: 150px;
+  margin: 2% auto;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid $myBorderColor;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #908d8d;
 }

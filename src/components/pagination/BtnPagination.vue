@@ -19,6 +19,22 @@ export default {
 .pagination {
   text-align: center;
   .pagination__btn {
+    button {
+      background-color: transparent;
+      border: 2px solid $myBorderColor;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: capitalize;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #908d8d;
+      &.pagination__btn--one {
+        margin-left: 5px;
+      }
+      &.pagination__btn--two {
+        margin: 0 5px;
+      }
+    }
   }
 }
 </style>
